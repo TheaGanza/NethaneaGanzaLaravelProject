@@ -6,4 +6,5 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/login', 'App\Http\Contollers\LoginController@index');
+Route::get('/login', 'App\Http\Controllers\LoginController@index');
+Route::get('/inventory', 'App\Http\Controllers\InventoryController@index');
