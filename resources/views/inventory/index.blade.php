@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Inventory</title>
+    <title>Bootstrap demo</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -12,60 +12,39 @@
     />
   </head>
   <body>
-    <a class="btn btn-primary" href="#" role="button">Back</a>
-    <div class="input-group mb-3">
-      <span class="input-group-text" id="basic-addon1">Category</span>
-      <input
-        type="text"
-        class="form-control"
-        placeholder="Item Category"
-        aria-label="itemCategory"
-        aria-describedby="basic-addon1"
-      />
-    </div>
-    <div class="input-group mb-3">
-      <span class="input-group-text" id="basic-addon1">Item Name</span>
-      <input
-        type="text"
-        class="form-control"
-        placeholder="Item Name"
-        aria-label="itemName"
-        aria-describedby="basic-addon2"
-      />
-    </div>
-    <div class="input-group mb-3">
-      <div class="input-group-prepend">
-        <span class="input-group-text">Quantity</span>
-      </div>
-      <input
-        type="text"
-        class="form-control"
-        placeholder="Item Quantity"
-        aria-label="itemQuantity"
-        aria-label="Amount (to the nearest dollar)"
-      />
-    </div>
-    <div class="input-group mb-3">
-      <div class="input-group-prepend">
-        <span class="input-group-text">Price</span>
-      </div>
-      <input
-        type="text"
-        class="form-control"
-        placeholder="Item Price"
-        aria-label="itemPrice"
-      />
-      <div class="input-group-append">
-        <span class="input-group-text">.00</span>
+    <div class="container">
+      <div class="table-responsive">
+        <table class="table table-dark table-striped">
+          <thead>
+            <tr>
+              <th scope="col">Cat-Name Rank</th>
+              <th scope="col">Male</th>
+              <th scope="col">Female</th>
+              <th scope="col">Neutral</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>Max</td>
+              <td>Daniela</td>
+              <td>Sam</td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>Jacob</td>
+              <td>Daisy</td>
+              <td>Oreo</td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>Larry</td>
+              <td>Amber</td>
+              <td>Cookie</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </div>
-    <div class="d-grid gap-2 col-6 mx-auto">
-      <button class="btn btn-primary" type="button">Submit</button>
-    </div>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
   </body>
 </html>
