@@ -15,7 +15,6 @@ class CreateCategoriesTable extends Migration
             $table->id();
             $table->string('name');
             $table->text('description')->nullable();
-            $table->string('default_unit_of_measure')->nullable();
             $table->timestamps();
         });
     }

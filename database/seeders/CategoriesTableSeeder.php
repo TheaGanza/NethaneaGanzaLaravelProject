@@ -2,17 +2,19 @@
 
 namespace Database\Seeders;
 
-use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\DB;
 
 class CategoriesTableSeeder extends Seeder
 {
-    public function run()
+    public function run(): void
     {
         DB::table('categories')->insert([
-            ['id' => 1, 'name' => 'Pastry', 'description' => 'Sweet and savoury baked goods'],
-            ['id' => 2, 'name' => 'Candy', 'description' => 'Confections made with sugar.'],
-            ['id' => 3, 'name' => 'Pasta', 'description' => 'Resources for students and teachers.'],
+            ['id' => 1, 'name' => 'Pastry', 'description' => 'Sweet and savoury baked goods','created_at'=> now(),'updated_at'=> now()],
+            ['id' => 2, 'name' => 'Candy', 'description' => 'Confections made with sugar.','created_at'=> now(),'updated_at'=> now()],
+            ['id' => 3, 'name' => 'Pasta', 'description' => 'Resources for students and teachers.','created_at'=> now(),'updated_at'=> now()],
+            ['id' => 4, 'name' => 'Pizza', 'description' => 'Flattened disk of bread dough with toppings baked quickly.','created_at'=> now(),'updated_at'=> now()],
+            ['id' => 5, 'name' => 'Beverage', 'description' => 'Drinks other than water.','created_at'=> now(),'updated_at'=> now()],
         ]);
     }
 }
