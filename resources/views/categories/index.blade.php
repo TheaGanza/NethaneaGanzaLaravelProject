@@ -5,7 +5,7 @@
 @section('content')
 <div class="container">
     <h2 class="mb-4">Categories List</h2>
-    <table class="table table-bordered table-hover">
+    <table class="table table-bordered table-hover table-striped">
         <thead class="thead-dark">
             <tr>
                 <th>ID</th>
